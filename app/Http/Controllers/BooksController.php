@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class BooksController extends Controller
 {
+    //index
+    public function index(){
+        return view("index");
+    }
+
     public function show(){
         //隨機3個不重複數字
         if(!session()->has('nums')){ 
